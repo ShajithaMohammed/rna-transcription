@@ -14,10 +14,10 @@ class RnaTranscription {
 
     String transcribe(String dnaStrand) {
 
-        String rnaStrand = "";
-        
+        String rnaStrand = new String();
+
         for (int i = 0; i < dnaStrand.length(); i++) {
-            rnaStrand = rnaStrand + "" + conversionFactor.get(dnaStrand.charAt(i));
+            rnaStrand = rnaStrand + conversionFactor.get(dnaStrand.charAt(i));
         }
 
         return rnaStrand;
